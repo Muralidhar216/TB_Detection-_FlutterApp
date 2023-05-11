@@ -218,7 +218,7 @@ class _MyHomeState extends State<MyHome> {
                 icon: Icon(
                   isPlaying1 ? Icons.pause : Icons.play_arrow,
                 ),
-                iconSize: 50,
+                iconSize: 40,
                 onPressed: () async {
                   if (isPlaying1) {
                     await audioPlayer1.pause();
@@ -229,7 +229,7 @@ class _MyHomeState extends State<MyHome> {
               ),
             ),
             SizedBox(
-              width: 50, //<-- SEE HERE
+              height: 15, //<-- SEE HERE
             ),
             ElevatedButton(
               onPressed: () async {
@@ -249,6 +249,9 @@ class _MyHomeState extends State<MyHome> {
                     ),
                   )
                 : Text(''),
+            SizedBox(
+              height: 30, //<-- SEE HERE
+            ),
             Text(
               "Prediction Audio",
               style: TextStyle(
@@ -287,7 +290,7 @@ class _MyHomeState extends State<MyHome> {
                 icon: Icon(
                   isPlaying2 ? Icons.pause : Icons.play_arrow,
                 ),
-                iconSize: 50,
+                iconSize: 40,
                 onPressed: () async {
                   if (isPlaying2) {
                     await audioPlayer2.pause();

@@ -60,9 +60,9 @@ class _MyOtpState extends State<MyOtp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/img1.png',
-                width: 150,
-                height: 150,
+                'assets/img-3.png',
+                width: 250,
+                height: 250,
               ),
               SizedBox(
                 height: 25,
@@ -114,7 +114,7 @@ class _MyOtpState extends State<MyOtp> {
                   },
                   child: Text('Verify Phone Number'),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.green.shade600,
+                      primary: Colors.deepPurple,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                 ),
