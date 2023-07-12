@@ -1,11 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/home.dart';
 import 'package:myapp/login.dart';
 import 'package:myapp/phone.dart';
 import 'package:myapp/register.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:myapp/home.dart';
+import 'package:myapp/tb_detection.dart';
 
 import 'otp.dart';
+import 'urbansound.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,9 +31,11 @@ void main() async {
     routes: {
       'login': (context) => Mylogin(),
       'register': (context) => MyRegister(),
-      'home': (context) => MyHome(),
+      'home': (context) => MyApp(),
       'phone': (context) => MyPhone(),
-      'otp': (context) => MyOtp()
+      'otp': (context) => MyOtp(),
+      "tb-dection": (context) => tb_detection(),
+      'urbansound': (context) => urbansound(),
     },
   ));
 }
